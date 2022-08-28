@@ -1,0 +1,30 @@
+.sidebar {
+    background: $white;
+
+    &__element:first-child {
+        border-top: 1px solid $silberLight  !important;
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+    }
+
+    &__element:last-child {
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+    }
+
+    &__element {
+        padding: 1.5rem;
+        border: 1px solid $silberLight;
+        border-top: none;
+
+        a {
+            color: $black;
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}

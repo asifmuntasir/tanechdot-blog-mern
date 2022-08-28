@@ -1,0 +1,15 @@
+.bg_img{
+    width: 100%;
+    height: calc(100vh - 8.1rem);
+    background: url('../../images/regiterImage.jpg') center/cover;
+
+    @include responsive(mobile){
+        width: 0;
+        height: 0;
+    }
+
+    @include responsive(tablet){
+        width: 0;
+        height: 0;
+    }
+}

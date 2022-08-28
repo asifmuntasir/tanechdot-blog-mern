@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    li:first-child {
+        border-left: 1px solid $green  !important;
+    }
+
+    li {
+        list-style-type: none;
+        display: block;
+        padding: 1rem;
+        border: 1px solid $green;
+        border-left: none;
+
+        a {
+            padding: 1rem;
+            color: $green;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.active {
+    background: $green;
+
+    a {
+        color: $white  !important;
+    }
+}
