@@ -67,7 +67,7 @@ const Details = () => {
                                         {htmlToText(details.body)}
                                     </div>
                                     <div className="post__card__body__image">
-                                        <img src={details.image} alt={details.image} />
+                                        <img src={`/image/${details.image}`} alt={details.image} />
                                     </div>
                                 </div>
                                 {
