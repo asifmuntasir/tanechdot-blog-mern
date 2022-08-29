@@ -51,7 +51,7 @@ module.exports.createPost = (req, res) => {
                     msg: `${extension} is not a valid extension`,
                 })
             } else {
-                files.image.originalFilename = uuidv4() + '-' + extension;
+                files.image.originalFilename = uuidv4() + '.' + extension;
             }
         }
 
