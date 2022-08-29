@@ -22,8 +22,7 @@
 - Bcrypt For Hash Password
 
 ## Live Demo
-<!-- For the link to the live demo, [Click here] -->
-> Working on deployment.
+For the link to the live demo, [Click here](https://tanechdot-blog.herokuapp.com/)
 
 ## Getting Started
 To get a local copy up and running you just need to follow the following steps;
