@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
 const auth = require('../utils/auth');
 const {
     createPost,
@@ -15,10 +14,8 @@ const {
     postComment
 } = require("../controllers/userPostController");
 
-const upload = multer({ dest: `../../the-anecdote-client/public/image` });
-
-
-router.post('/create_post', auth, upload.single('image'), createPost);
+// all routes
+router.post('/create_post', auth, createPost);
 router.post('/update_post', [auth, updateValidations], updatePost);
 router.post('/update_image', auth, updateImage);
 router.get('/posts/:id/:page', auth, fetchPosts);
